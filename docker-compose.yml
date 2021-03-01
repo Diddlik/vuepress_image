@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+  vue-press:
+    image: diddlik/vuepress:latest
+    container_name: vuepress_d
+    tty: true
+    ports:
+      - "8085:8080"
+    volumes:
+      - ./data:/usr/src
+      
+    
